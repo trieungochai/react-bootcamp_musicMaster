@@ -11,7 +11,7 @@ const Artist = ({ artist }) => {
       <h3>{name}</h3>
       <p>{followers.total} Followers</p>
       <p>{genres.join(', ')}</p>
-      <img 
+      <img
         src={images[0] && images[0].url}
         alt='artist-profile'
         style={{
