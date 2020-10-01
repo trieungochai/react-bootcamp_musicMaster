@@ -31,7 +31,7 @@ class Tracks extends React.Component {
     }
 
     if (this.state.playing && this.state.playingPreviewUrl === track.preview_url) {
-      return <span>||</span>
+      return <span>| |</span>
     } else return <span>&#9654;</span>
   };
   
