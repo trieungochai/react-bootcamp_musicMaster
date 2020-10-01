@@ -10,6 +10,10 @@ class App extends React.Component {
     artist: null,
     tracks: [],
   };
+
+  componentDidMount = () => {
+    this.searchArtist('Daft Punk');
+  };
   
   searchArtist = (artistQuery) => {
     fetch(`${API_REQUEST}/artist/${artistQuery}`)
